@@ -19,9 +19,9 @@
       <Button guid="CommandServer" id="ReceiveCommand" priority="0x0100" type="Button">
         <Parent guid="CommandServer" id="MyMenuGroup" />
         <Icon guid="ImageCatalogGuid" id="StatusInformation" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
+		  <CommandFlag>CommandWellOnly</CommandFlag>
         <Strings>
-          <ButtonText>Receive Command</ButtonText>
+          <ButtonText>Receive_Command</ButtonText>
           <LocCanonicalName>.CommandServer.ReceiveCommand</LocCanonicalName>
         </Strings>
       </Button>
@@ -29,17 +29,15 @@
     <Button guid="CommandServer" id="ServerInit" priority="0x0100" type="Button">
         <Parent guid="CommandServer" id="MyMenuGroup" />
 	    <Icon guid="ImageCatalogGuid" id="SendSignalAction" />
-	    <CommandFlag>PostExec</CommandFlag>
+		
 	    <Strings>
-		    <ButtonText>Initialise</ButtonText>
+		    <ButtonText>Initialise col</ButtonText>
 		    <LocCanonicalName>.CommandServer.Init</LocCanonicalName>
 	    </Strings>
     </Button>
     </Buttons>
   </Commands>
 
-
-	<!-- eventually ctrl-shift-f17"-->
   <KeyBindings>
 	  <KeyBinding guid="CommandServer" id="ReceiveCommand" editor="guidVSStd97" key1="VK_F17" mod1="Control Shift" />
   </KeyBindings>
