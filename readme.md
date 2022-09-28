@@ -2,8 +2,8 @@
 
 Adds support for running arbitrary commands via file-based RPC. Designed for use with voice-control systems such as Talon. 
 
-**Note:** Initial version of this extension expected files to be in <user-temp>/visual-studio-CommandServer the main branch of [Knausj](https://github.com/knausj85/knausj_talon) (The main Talon user configs) uses 
-visual-studio-command-server, if you are no longer receiving commands, check your program is writing commands to <user-temp>/visual-studio-command-server directory.
+**Note:** Initial version of this extension expected files to be in user-temp/visual-studio-CommandServer the main branch of [Knausj](https://github.com/knausj85/knausj_talon) (The main Talon user configs) uses 
+visual-studio-command-server, if you are no longer receiving commands, check your program is writing commands to user-temp/visual-studio-command-server directory. The user-temp directory is usually ```C:\Users\your-name\AppData\Local\Temp\```
 
 # Features 
 
