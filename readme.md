@@ -2,9 +2,12 @@
 
 Adds support for running arbitrary commands via file-based RPC. Designed for use with voice-control systems such as Talon. 
 
+**Note:** Initial version of this extension expected files to be in <user-temp>/visual-studio-CommandServer the main branch of [Knausj](https://github.com/knausj85/knausj_talon) (The main Talon user configs) uses 
+visual-studio-command-server, if you are no longer receiving commands, check your program is writing commands to <user-temp>/visual-studio-command-server directory.
+
 # Features 
 
-* On start-up of Visual Studio, creates a communication directory in the users temp directory, called visual-studio-commandServer
+* On start-up of Visual Studio, creates a communication directory in the users temp directory, called visual-studio-command-server
 * Then waits for the CommandServer.ReceiveCommand command to be issued.
 * Once the server is triggered the command server will read the ```request.json``` file in the communication directory.
 * The command in the JSON file is then executed and a response written to``` response.json```. **Note** that we write the JSON response on a single line, with a trailing newline, so that the client can repeatedly try to read the file until it finds a final newline to indicate that the write is complete.

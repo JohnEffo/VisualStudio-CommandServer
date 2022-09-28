@@ -117,7 +117,7 @@ namespace CommandServer.Commands.Commands
             }
             else
             {
-                content = $"RequestToOld:{requestTooOld}";
+                content = $"RequestToOld:{requestTooOld}. No recent command found in {Path.Combine(System.IO.Path.GetTempPath(), RendezvousDirectory)}\r";
             }
             return (contentLoaded, content, signalTouched);
         }
