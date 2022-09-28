@@ -16,7 +16,7 @@ namespace CommandServer.Commands.Commands
     {
         [Import]
         internal ICommandServerDispatch CommandServerDispatch { get; set; }
-        public const string RendezvousDirectory = "visual-studio-commandServer";
+        public const string RendezvousDirectory = "visual-studio-command-server";
         public const string SignalDirectory = "signals";
         public string requestPath = Path.Combine(System.IO.Path.GetTempPath(), RendezvousDirectory, "request.json");
         public string responsePath = Path.Combine(System.IO.Path.GetTempPath(), RendezvousDirectory, "response.json");
